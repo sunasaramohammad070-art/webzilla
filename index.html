@@ -124,3 +124,96 @@ function hideContent(){
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #f9ca24, #f0932b);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .container {
+            text-align: center;
+            padding: 50px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+        }
+        
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .photo {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            border: 8px solid rgba(255,255,255,0.3);
+            margin: 30px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .photo:hover {
+            transform: scale(1.05);
+        }
+        
+        p {
+            font-size: 1.5em;
+            margin: 20px 0;
+        }
+        
+        .btn {
+            background: #ff6b6b;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        
+        .btn:hover {
+            background: #ff5252;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌈 Meri Colorful Website! 🌈</h1>
+        <img src="https://via.placeholder.com/300x300/ff6b6b/ffffff?text=Tumhari+Photo" alt="Tumhari Photo" class="photo">
+        <p>Bhai, website bilkul colorful ho gayi! Photo bhi aa gayi! 🎉</p>
+        <a href="#" class="btn">Click Karo Dekho! ✨</a>
+    </div>
+</body>
+</html>
