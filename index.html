@@ -270,3 +270,77 @@
     </ul>
               </li>
               
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Website</title>
+
+<style>
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  text-align:center;
+}
+
+.header{
+  padding:60px 20px;
+  color:white;
+  background: linear-gradient(45deg, purple, blue);
+}
+
+.btn{
+  padding:10px 20px;
+  background:white;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  margin-top:20px;
+}
+
+.section{
+  display:none;
+  padding:40px;
+}
+
+.card{
+  background:#f2f2f2;
+  margin:15px;
+  padding:20px;
+  border-radius:10px;
+  cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+  <h1>Swagat Hai Aapka!</h1>
+  <button class="btn" onclick="openSection('about')">Start Here</button>
+</div>
+
+<div id="about" class="section">
+  <h2>Kyun Beautiful?</h2>
+
+  <div class="card" onclick="alert('Yeh Sundar Animation Page Hai')">
+    🌟 Sundar Animations
+  </div>
+
+  <div class="card" onclick="alert('Yeh Mobile Friendly Page Hai')">
+    📱 Mobile Friendly
+  </div>
+
+  <div class="card" onclick="alert('Yeh Creative Design Page Hai')">
+    🎨 Creative Design
+  </div>
+</div>
+
+<script>
+function openSection(id){
+  document.getElementById(id).style.display="block";
+}
+</script>
+
+</body>
+</html>
